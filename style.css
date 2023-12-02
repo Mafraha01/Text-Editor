@@ -1,0 +1,25 @@
+body {
+    background-color: #dde1e6; 
+  }
+  
+  #toolbar button, #toolbar select, #toolbar input {
+    margin-right: 5px;
+  }
+  
+  #editor {
+    min-height: 200px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: left; 
+  }
+  
+  h1{
+    margin-bottom: 30px;
+  }
+  
+  #editor {
+    background-color: #ffffff;
+    border-style: dashed;
+    transition: border 0.3s; 
+  }
+  
