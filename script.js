@@ -13,3 +13,7 @@ function handleBoldButtonClick() {
   function handleUndoButtonClick() {
     document.execCommand('undo', false, null);
   }
+
+  function handleRedoButtonClick() {
+    document.execCommand('redo', false, null);
+  }
