@@ -9,4 +9,7 @@ function handleBoldButtonClick() {
   function handleUnderlineButtonClick() {
     document.execCommand('underline', false, null);
   }
-  
+
+  function handleUndoButtonClick() {
+    document.execCommand('undo', false, null);
+  }
