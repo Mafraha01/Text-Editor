@@ -5,3 +5,8 @@ function handleBoldButtonClick() {
   function handleItalicButtonClick() {
     document.execCommand('italic', false, null);
   }
+
+  function handleUnderlineButtonClick() {
+    document.execCommand('underline', false, null);
+  }
+  
