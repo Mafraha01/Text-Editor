@@ -46,3 +46,8 @@ function handleBoldButtonClick() {
     }
     return "";
   }
+
+  function alignText(align) {
+    var editor = document.getElementById('editor');
+    editor.style.textAlign = align;
+  }
