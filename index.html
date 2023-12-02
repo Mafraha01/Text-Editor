@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Text Editor-CT/2019/071</title>
+</head>
+
+<body>
+  <div class="container mt-4">
+    <h1>Text Editor</h1>
+    <h6 class="text-body-secondary">[CT/2019/071]</h6>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark  justify-content-center" data-bs-theme="dark">
+      <div id="toolbar container-lg" class="btn-group row" role="group" aria-label="Basic example">
+        <button class="btn btn-secondary" class="btn btn-light" title="Bold" onclick="handleBoldButtonClick()">
+          <img src="bold-xxl.png" alt="bold" width="20" height="20"></button>
+        <button class="btn btn-secondary" class="btn btn-light" title="Italic" onclick="handleItalicButtonClick()">
+          <img src="italic-xxl.png" alt="italic" width="20" height="20"></button>  
+          <button class="btn btn-secondary" class="btn btn-light" title="Underline" onclick="handleUnderlineButtonClick()">
+            <img src="format_underline_white_192x192.png" alt="underline" width="20" height="20">
+        </button> 
+        <button class="btn btn-secondary" class="btn btn-light" title="Undo" onclick="handleUndoButtonClick()">
+          <img src="undo-4-32.png" alt="undo" width="20" height="20"></button>
+        <button class="btn btn-secondary" class="btn btn-light" onclick="handleRedoButtonClick()" title="Redo">
+          <img src="action-redo-32.png" alt="redo" width="20" height="20"></button>  
+        <input type="color" class="btn btn-secondary" id="fontColorPicker" title="Font Color"
+          onchange="changeFontColor(this.value)" width="10" height="30">
+        <button class="btn btn-secondary" onclick="alignText('left')" class="btn btn-light" title="Left Align">
+          <img src="left.png" alt="left" width="20" height="20"></button> 
+        <button class="btn btn-secondary" onclick="alignText('center')" class="btn btn-light" title="Center Align">
+          <img src="center.png" alt="center" width="20" height="20"></button>
+        <button class="btn btn-secondary" onclick="alignText('right')" class="btn btn-light" title="Right Align">
+          <img src="right.png" alt="right" width="20" height="20"></button>   
+        <button class="btn btn-secondary" onclick="alignText('justify')" class="btn btn-light" title="Justify">
+          <img src="justify.png" alt="Justify" width="20" height="20">
+        </button>
+      </div>
+    </nav>
+    <div contenteditable="true" id="editor" class="pb-2"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
